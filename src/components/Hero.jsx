@@ -58,7 +58,7 @@ const Hero = () => {
           {/* Trust indicators */}
           <div className="flex flex-wrap items-center gap-4 pt-6 border-t border-white/20">
             <div className="text-white/90">
-              <div className="text-2xl md:text-3xl font-bold text-white">2,50+</div>
+              <div className="text-2xl md:text-3xl font-bold text-white">300+</div>
               <div className="text-xs md:text-sm text-white/70">Lives Changed</div>
             </div>
             <div className="w-px h-10 bg-white/20"></div>

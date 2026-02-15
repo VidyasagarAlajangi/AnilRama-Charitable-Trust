@@ -38,25 +38,30 @@ const Navbar = () => {
 
           {/* Logo */}
           <div
-            className="flex items-center gap-3 cursor-pointer group"
+            className="flex items-center gap-2 sm:gap-3 lg:gap-4 cursor-pointer group"
             onClick={() => navigate("/")}
-          >
-            <div className="relative">
-              <img 
-                src={anilrama} 
-                alt="Anil Rama Logo" 
-                className="w-16 h-auto transition-transform group-hover:scale-105" 
-              />
+            >
+            {/* Logo */}
+            <div className="relative flex-shrink-0">
+                <img
+                src={anilrama}
+                alt="Anil Rama Logo"
+                className="w-12 sm:w-14 md:w-16 lg:w-20 h-auto transition-transform duration-300 group-hover:scale-105"
+                />
             </div>
-            <div className="hidden sm:block">
-              <p className="text-lg font-bold text-brand-blue leading-tight">
+
+            {/* Title */}
+            <div className="leading-tight">
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-extrabold tracking-wide text-brand-blue">
                 Anil Rama
-              </p>
-              <p className="text-xs text-charity-muted font-medium">
+                </p>
+
+                <p className="text-[10px] sm:text-[11px] md:text-xs lg:text-sm font-medium tracking-widest text-brand-green uppercase">
                 Charitable Trust
-              </p>
+                </p>
             </div>
-          </div>
+            </div>
+
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">

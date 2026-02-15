@@ -5,7 +5,7 @@ const Achievements = () => {
   const milestones = [
     {
       title: "Winter Clothing Drive",
-      desc: "We've distributed warm clothes to over 800 families when they needed it most—during harsh winters and unexpected crises.",
+      desc: "We've distributed warm clothes to over 300 families when they needed it most—during harsh winters and unexpected crises.",
       icon: Shirt,
       stat: "300+",
       label: "families"
@@ -49,7 +49,7 @@ const Achievements = () => {
 
         {/* Heading */}
         <div className="max-w-3xl mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-blue mb-5 tracking-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-brand-blue mb-5 tracking-tight">
             What We've Done Together
           </h2>
           <p className="text-charity-muted text-lg md:text-xl leading-relaxed">
