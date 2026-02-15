@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import { TRUST_DETAILS } from '../constants';
 import { Shield, Target, Eye, Award, Linkedin, Mail } from 'lucide-react';
 import anil from "../assets/anil_1.jpg";
-import rama from "../assets/rama.jpg";
+import rama from "../assets/Rama.jpg";
 
 const About = () => {
   const values = [
