@@ -5,7 +5,7 @@ import { ArrowRight, Heart } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden  pt-16 md:pt-24 lg:pt-28">
+    <section className="relative min-h-screen flex items-center overflow-hidden  pt-15 md:pt-24 lg:pt-28">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
