@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full ">
         <div className="max-w-3xl">
           
           {/* Small badge */}
