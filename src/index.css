@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors - Palette A */
+  --color-brand-blue: #0F2D3F;    /* Deep trust blue (headings, links, strong text) */
+  --color-brand-green: #159895;   /* Teal (icons, subtle accents) */
+  --color-brand-light: #F3F8FB;   /* Soft sky background */
+  --color-brand-accent: #F59E0B;  /* Warm amber for Donate / CTAs */
+
+  /* Text colors */
+  --color-charity-text: #1F2937;  /* Main body text (charcoal) */
+  --color-charity-muted: #4B5563; /* Secondary text (muted slate) */
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-light text-charity-text font-sans antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply tracking-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+.btn-primary {
+  @apply bg-brand-accent text-white px-6 py-3 rounded-lg font-bold hover:bg-orange-600 transition-all shadow-lg;
+}
+
+.btn-secondary {
+  @apply border-2 border-brand-blue text-brand-blue px-6 py-3 rounded-lg font-bold hover:bg-brand-blue hover:text-white transition-all;
+}
+
+html {
+  scroll-behavior: smooth;
+}
