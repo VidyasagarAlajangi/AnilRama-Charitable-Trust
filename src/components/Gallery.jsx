@@ -22,34 +22,32 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <section id='gallery' className="py-20 bg-brand-light">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-end mb-12">
-          <div>
-            <h2 className="text-3xl font-bold text-brand-blue mb-2">
-              Moments of Hope
-            </h2>
-            <p className="text-charity-muted">
-              Glimpses into our field activities and impact zones.
-            </p>
-          </div>
+    <section id='gallery' className="py-20 md:py-28 bg-brand-light">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center md:text-left mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-brand-blue mb-4 tracking-tight">
+            Moments of Hope
+          </h2>
+          <p className="text-charity-muted text-lg md:text-xl font-light">
+            Glimpses into our field activities and impact zones.
+          </p>
         </div>
 
         {/* Gallery grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {images.map((url, index) => (
             <div
               key={index}
               onClick={() => setSelectedImage(url)}
-              className="group relative h-64 overflow-hidden rounded-2xl shadow-sm cursor-pointer"
+              className="group relative h-64 md:h-72 overflow-hidden rounded-2xl md:rounded-3xl shadow-soft hover:shadow-hover cursor-pointer border border-white transition-all duration-300 ease-out"
             >
               <img
                 src={url}
                 alt="Impact Activity"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-brand-blue/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <span className="text-white font-medium border border-white px-4 py-2 rounded-full">
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-blue/80 via-brand-blue/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                <span className="text-white font-bold tracking-wide border-2 border-white/50 bg-white/10 px-6 py-2.5 rounded-full backdrop-blur-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                   Enlarge
                 </span>
               </div>

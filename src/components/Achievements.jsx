@@ -44,21 +44,21 @@ const Achievements = () => {
   };
 
   return (
-    <section className="py-16 md:py-16 bg-gradient-to-b from-white via-brand-light/30 to-white">
+    <section className="py-20 md:py-28 bg-gradient-to-b from-white via-brand-light/40 to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <div className="max-w-3xl mb-16">
-          <h2 className="text-2xl md:text-4xl font-bold text-brand-blue mb-5 tracking-tight">
+        <div className="max-w-3xl mb-16 md:mb-20">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-brand-blue mb-6 tracking-tight animate-fade-in-up">
             What We've Done Together
           </h2>
-          <p className="text-charity-muted text-lg md:text-xl leading-relaxed">
+          <p className="text-charity-muted text-lg md:text-xl leading-relaxed tracking-wide font-light max-w-2xl animate-fade-in-up" style={{ animationDelay: '100ms', opacity: 0 }}>
             Every number here represents a real person whose life got a little easier. Here's what your support has made possible.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {milestones.map((item, index) => {
             const Icon = item.icon;
             const cardRef = useRef(null);
@@ -68,49 +68,49 @@ const Achievements = () => {
                 key={index}
                 ref={cardRef}
                 onMouseMove={(e) => handleMouseMove(e, cardRef)}
-                className="group relative p-7 bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 overflow-hidden border border-gray-100"
+                className="group card-premium relative p-8 isolate"
                 style={{
                   backgroundImage:
-                    "radial-gradient(350px circle at var(--mouse-x) var(--mouse-y), rgba(21,152,149,0.08), transparent 70%)",
+                    "radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), rgba(21,152,149,0.06), transparent 80%)",
                 }}
               >
-                <div className="relative z-10">
+                <div className="relative z-10 h-full flex flex-col justify-between">
 
                   {/* Stat badge */}
-                  <div className="flex items-end justify-between mb-6">
-                    <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-brand-green/10 text-brand-green group-hover:bg-brand-green group-hover:text-white transition-colors duration-300">
-                      <Icon size={24} />
+                  <div className="flex items-start justify-between mb-8">
+                    <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-brand-light text-brand-green group-hover:bg-brand-green group-hover:text-white transition-all duration-300 ease-out shadow-sm group-hover:shadow-md group-hover:-translate-y-1">
+                      <Icon size={28} strokeWidth={2} />
                     </div>
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-brand-blue">{item.stat}</div>
-                      <div className="text-xs text-charity-muted uppercase tracking-wide">{item.label}</div>
+                      <div className="text-3xl font-black text-brand-blue tabular-nums tracking-tight">{item.stat}</div>
+                      <div className="text-[11px] text-brand-green font-bold uppercase tracking-widest mt-1 opacity-90">{item.label}</div>
                     </div>
                   </div>
 
-                  {/* Title */}
-                  <h4 className="text-xl font-bold text-brand-blue mb-3 group-hover:text-brand-green transition-colors">
-                    {item.title}
-                  </h4>
-
-                  {/* Description */}
-                  <p className="text-charity-muted leading-relaxed">
-                    {item.desc}
-                  </p>
+                  {/* Title & Description */}
+                  <div>
+                    <h4 className="text-xl font-bold text-brand-blue mb-4 group-hover:text-brand-green transition-colors duration-300">
+                      {item.title}
+                    </h4>
+                    <p className="text-charity-muted leading-relaxed text-sm md:text-base opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+                      {item.desc}
+                    </p>
+                  </div>
 
                 </div>
 
                 {/* Subtle gradient accent */}
-                <div className="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-tl from-brand-accent/5 to-transparent rounded-tl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-brand-green/5 to-transparent rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none -z-10"></div>
               </div>
             );
           })}
         </div>
 
         {/* Bottom CTA hint */}
-        <div className="mt-16 text-center">
-          <p className="text-charity-muted text-lg">
+        <div className="mt-20 text-center animate-fade-in-up" style={{ animationDelay: '300ms', opacity: 0 }}>
+          <p className="text-charity-muted text-lg font-medium">
             Want to be part of the next milestone?{" "}
-            <a href="#contact" className="text-brand-green font-semibold hover:text-brand-blue transition-colors underline decoration-brand-green/30 hover:decoration-brand-blue/30">
+            <a href="#contact" className="text-brand-green ml-1 font-bold hover:text-brand-blue transition-colors duration-300 border-b-2 border-brand-green/30 hover:border-brand-blue pb-0.5">
               Get in touch
             </a>
           </p>
