@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { TRUST_DETAILS } from '../constants';
 import { Shield, Target, Eye, Award, Linkedin, Mail } from 'lucide-react';
-import anil from "../assets/anil_1.jpg";
+import anil from "../assets/Anil_2.jpg";
 import rama from "../assets/Rama.jpg";
 
 const About = () => {
@@ -50,7 +50,7 @@ const About = () => {
                   <img src={anil} alt="Mr. Anil Thummaganti" className="w-40 h-48 object-cover group-hover:scale-105 transition-transform duration-500 ease-out" />
                 </div>
                 <div className="text-center xl:text-left flex-grow">
-                  <h4 className="text-2xl md:text-3xl font-bold text-brand-blue mb-1">Mr. Anil Thummaganti</h4>
+                  <h4 className="text-2xl md:text-2xl font-bold text-brand-blue mb-1">Mr. Anil Thummaganti</h4>
                   <p className="text-brand-green font-bold text-sm tracking-wide uppercase mb-4">President & Founder</p>
                   <p className="text-charity-muted text-base leading-relaxed mb-6 font-light">
                     "True wealth lies in what we give back. Our trust is built on the foundation of hope and the belief that no child should go hungry or uneducated."
@@ -68,7 +68,7 @@ const About = () => {
                   <img src={rama} alt="Mr. Rama Rao Alajangi" className="w-40 h-48 object-cover group-hover:scale-105 transition-transform duration-500 ease-out" />
                 </div>
                 <div className="text-center xl:text-left flex-grow">
-                  <h4 className="text-2xl md:text-3xl font-bold text-brand-blue mb-1">Mr. Rama Rao Alajangi</h4>
+                  <h4 className="text-2xl md:text-2xl font-bold text-brand-blue mb-1">Mr. Rama Rao Alajangi</h4>
                   <p className="text-brand-green font-bold text-sm tracking-wide uppercase mb-4">Vice President</p>
                   <p className="text-charity-muted text-base leading-relaxed mb-6 font-light">
                     Overseeing our healthcare and community welfare initiatives, ensuring transparency and direct impact in every project we undertake.
@@ -111,11 +111,11 @@ const About = () => {
               <div className="space-y-4 text-charity-text text-lg md:text-xl">
                 <p className="flex flex-col md:flex-row justify-center items-center gap-2">
                   <span className="font-bold text-brand-blue uppercase tracking-wide text-sm">Trust Registration No:</span>
-                  <span className="font-medium bg-white px-4 py-1.5 rounded-lg border border-gray-100 shadow-sm">{TRUST_DETAILS.regNo}</span>
+                  <span className="font-small bg-white px-4 py-1.5 rounded-lg border border-gray-100 shadow-sm">{TRUST_DETAILS.regNo}</span>
                 </p>
                 <p className="flex flex-col md:flex-row justify-center items-center gap-2">
                   <span className="font-bold text-brand-blue uppercase tracking-wide text-sm">80G Registration:</span>
-                  <span className="font-medium bg-white px-4 py-1.5 rounded-lg border border-gray-100 shadow-sm">CIT(E)/80G/202X-XX/XXXX</span>
+                  <span className="font-small bg-white px-4 py-1.5 rounded-lg border border-gray-100 shadow-sm">CIT(E)/80G/202X-XX/XXXX</span>
                 </p>
               </div>
               <div className="mt-10 flex flex-wrap justify-center gap-4">
