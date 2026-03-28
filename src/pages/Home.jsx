@@ -17,12 +17,11 @@ const Home = () => {
         <Hero />
         {/* <ImpactStats />
         <ProgramGrid /> */}
-        
+
         {/* New Sections Integrated Here */}
         <Achievements />
         <Gallery />
         <ContactSection />
-        {/* <Testimonials /> */}
       </main>
       <Footer />
     </div>
